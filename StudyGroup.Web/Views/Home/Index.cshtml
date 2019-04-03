@@ -1,0 +1,30 @@
+﻿<div class="jumbotron">
+    <h1>Study Groups</h1>
+    @Html.ActionLink("Click here to run the demo","Index","StudyGroups")
+</div>
+<h2>Implemenation Details</h2>
+
+<div class="row">
+    <div class="col-md-6">
+        <h3>System participants</h3>
+        <ul>
+            <li>Web client application</li>
+            <li>API Gateway</li>
+            <li>Study Group Services</li>
+        </ul>
+        <img src="~/Content/images/Design.svg" style="width:100%" />
+    </div>
+    <div class="col-md-6">
+        <h3>Design</h3>
+        <ul>
+            <li>Microservices: Small service provides abstraction of study groups management.</li>
+            <li>Strategy: A strategy to group students is injected into service.</li>
+            <li>Repository: Data is fetched from data source using a readonly repository.</li>
+            <li>Unit Test: Service operation is testing by injecting data and dependencies using Moq and Builders</li>
+            <li>Object oriented design principles and isolation of concerns</li>
+        </ul>
+        <img src="~/Content/images/SystemSequence.svg" style="width:100%" />
+    </div>
+</div>
+
+
